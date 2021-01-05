@@ -1,0 +1,18 @@
+#ApiTestCaseModel
+name: getToken
+description: 获取Token方法测试用例
+steps:
+  - api: tokenhelper
+    action: getToken
+    actualParameter: ["ww9f8ef8c02c9d780a","HngeWZcbdZYysVowVb0b1Hyt_Hd1oiy5MOKYx-WDr3g"]
+    saveGlobal:
+      accesstoken: access_token
+    asserts:
+      - actual: errcode
+        matcher: equalTo
+        expect: 0
+        reason: 'getToken错误码校验01！'
+      - actual: errcode
+        matcher: equalTo
+        expect: 2
+        reason: 'getToken错误码校验01！'
