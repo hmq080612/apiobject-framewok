@@ -10,8 +10,6 @@ import java.util.Map;
 
 /**
  * 配置文件或模板中的占位符替换工具类
- * Date: 15-5-8
- * Time: 下午4:12
  */
 public class PlaceholderUtils {
     public static final Logger logger = LoggerFactory.getLogger(PlaceholderUtils.class);
